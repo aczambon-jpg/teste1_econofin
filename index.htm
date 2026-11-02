@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to aczambon."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta name="dc:creator" content="aczambon" />
+<meta name="dc:creator" content="Zambon" />
+<meta name="dc:creator" content="aNTONI" />
+
+
+
+<title>
+
+</title>
+
+<!-- Made with executable version 7.0 Release 2 Build 0 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style>
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 7.0 Release 2 Build 0 */
+
+
+
+/* CSS variables for colours. */
+:root{
+	--strFontFace:       Geneva,Arial,sans-serif;
+	--strFontSize:       small;
+	--strTextColor:      #000000;
+	--strTitleColor:     #000000;
+
+	--strFuncLightColor: #ffffff;
+	--strFuncShadeColor: #7f7f7f;
+	--strLinkColor:      #0000FF;
+	--strVLinkColor:     #0000CC;
+	
+	--strNavBarColor:    #000000;
+	--strNavLightColor:  #7f7f7f;
+	--strNavShadeColor:  #000000;
+	--strNavTextColor:   #ffffff;
+	
+	--strPageBGColor:    #C0C0C0;
+	--strExBGColor:      #FFFFFF;
+}
+
+body{
+	font-family: var(--strFontFace);
+	background-color: var(--strPageBGColor);
+	color: var(--strTextColor);
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: var(--strFontSize);
+	padding-bottom: 0.5em;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+table,div,span,td{
+	font-size: 1em;
+	color: var(--strTextColor);
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: var(--strTitleColor);
+}
+
+button{
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: var(--strTitleColor);
+}
+
+.ExerciseSubtitle{
+	font-size: 120%;
+	color: var(--strTitleColor);
+}
+
+div.StdDiv, div.ExerciseContainer, div.ReadingContainer{
+	background-color: var(--strExBGColor);
+	text-align: center;
+	font-size: 1em;
+	color: var(--strTextColor);
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: var(--strTextColor);
+	margin-bottom: 1px;
+}
+
+div.ReadingContainer, div.ExerciseContainer{
+	min-width: 15em;
+	flex-grow: 1;
+	flex-basis: 0;
+	margin: 1px;
+}
+
+div#ContainerDiv{
+	margin: -1px;
+	padding: 0;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", var(--strFontFace); 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", var(--strFontFace); 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", var(--strFontFace);
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: var(--strTitleColor);
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: var(--strTitleColor);
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: var(--strTitleColor);
+}
+
+.LeftItem{
+	font-size: 1em;
+	color: var(--strTextColor);
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 1em;
+	color: var(--strTextColor);
+	text-align: left;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: var(--strFontFace);
+	font-size: 120%;
+}
+
+select{
+	font-size: 1em;
+}
+
+div.Feedback {
+	background-color: var(--strPageBGColor);
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: var(--strTitleColor);
+	position: absolute;
+	display: none;
+	font-size: 1em;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: var(--strTextColor);
+}
+
+/* JMatch standard output table. */
+table.MatchTable{
+	margin: 2em auto; 
+	border-width: 0;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: var(--strTextColor);
+	border-color: var(--strTextColor);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/*width: 90%;*/
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: var(--strExBGColor);
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+	background-color: var(--strPageBGColor);
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div.JMixDrag, div.JMatchDrag{
+	padding: 0;
+	background-color: var(--strPageBGColor);
+	border-style: none;
+}
+
+div#GuessDiv{
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--strTextColor);
+	display: inline-block;
+	padding: 0.5em;
+	border: solid 1pt gray;
+	margin-bottom: 0.5em;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: var(--strTitleColor);
+	width: 80%;
+	left: 10%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: var(--strFontFace);
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: var(--strFontFace);
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+.Answer{
+	font-size: 120%;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: var(--strTitleColor);
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+
+	border-left-color: var(--strFuncLightColor);
+	border-top-color: var(--strFuncLightColor);
+	border-right-color: var(--strFuncShadeColor);
+	border-bottom-color: var(--strFuncShadeColor);
+	color: var(--strTextColor);
+	background-color: var(--strExBGColor);
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor);
+}
+
+.FuncButton:active {
+	box-shadow: none;
+}
+
+.FuncButton:hover{
+	color: var(--strExBGColor);
+	background-color: var(--strTextColor);
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: var(--strNavBarColor);
+	text-align: center;
+	margin: 0.25rem 0;
+	clear: both;
+	font-size: 1em;
+	padding: 0.2em;
+	box-sizing: border-box;
+}
+
+.NavButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+	
+	border-left-color: var(--strNavLightColor);
+	border-top-color: var(--strNavLightColor);
+	border-right-color: var(--strNavShadeColor);
+	border-bottom-color: var(--strNavShadeColor); 
+	background-color: var(--strNavBarColor);
+	color: var(--strNavTextColor);
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+}
+
+.NavButton:active {
+	box-shadow: none;
+}
+
+.NavButton:hover{
+	color: var(--strNavBarColor);
+	background-color: var(--strNavTextColor);
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: var(--strLinkColor);
+}
+
+a:visited{
+	color: var(--strVLinkColor);
+}
+
+a:hover{
+	color: var(--strLinkColor);
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 2em;
+	border-width: 1pt;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+	background-color: var(--strExBGColor);
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+div.CardStyleCentered{
+	text-align: center;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+</style>
+
+<script>
+
+//<![CDATA[
+
+<!--
+
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+			}
+		} 
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].offsetWidth;
+	this.H = document.getElementsByTagName('body')[0].offsetHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	thisKey = e.keyCode;
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+		e.preventDefault();
+	}
+}
+
+window.addEventListener('keypress',SuppressBackspace,false);
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//SELECTION OBJECT FOR TYPING WITH KEYPAD
+var selObj = null;
+            
+SelObj = function(box){
+	this.box = box;
+	this.selStart = this.box.selectionStart;
+	this.selEnd = this.box.selectionEnd;
+	this.selText = this.box.value.substring(this.selStart, this.selEnd);
+	return this;
+}
+
+function setSelText(newText){
+	var caretPos = this.selStart + newText.length;
+	var newValue = this.box.value.substring(0, this.selStart);
+	newValue += newText;
+	newValue += this.box.value.substring(this.selEnd, this.box.value.length);
+	this.box.value = newValue;
+	this.box.setSelectionRange(caretPos, caretPos);
+	this.box.focus();
+}
+SelObj.prototype.setSelText = setSelText;
+
+function setSelSelectionRange(start, end){
+	this.box.setSelectionRange(start, end);
+}
+SelObj.prototype.setSelSelectionRange = setSelSelectionRange;
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = ':-)';
+var IncorrectIndicator = 'X';
+var YourScoreIs = 'Your score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions completed so far: ';
+var ExerciseCompleted = 'You have completed the exercise.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = false;
+var ShuffleAs = false;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 28;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('As pessoas decidem poupar recursos, n\u00E3o gastando sua renda total','Keynes argumentava que, em momentos de crise, a incerteza faz com que as pessoas aumentem a prefer\u00EAncia pela liquidez e decidam poupar recursos em vez de gastar toda a sua renda, contestando a premissa de que a oferta cria sua pr\u00F3pria demanda.',1,100,1);
+I[0][3][1]=new Array('As pessoas gastam mais, pois buscam for\u00E7ar o novo equil\u00EDbrio de mercado','',0,0,1);
+I[0][3][2]=new Array('A postura do Estado deveria ser neutra, permitindo ao mercado agir expontaneamente (Laisses-fair)','',0,0,1);
+I[0][3][3]=new Array('O cr\u00E9dito representaria invariavelmente, o vetor de agravamento da recess\u00E3o','',0,0,1);
+I[0][3][4]=new Array('O p\u00E2nico no mercado culminaria com a inviabiliza\u00E7\u00E3o dos neg\u00F3cios nas bolsas','',0,0,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('No descompasso da produ\u00E7\u00E3o que, contrariando \u00E0 Teoria Cl\u00E1ssica, n\u00E3o gerou uma demanda correspondente.','A Crise de 1929 decorreu do descompasso no qual a capacidade produtiva superou a demanda efetiva de mercado, demonstrando que a oferta n\u00E3o gerava automaticamente um consumo correspondente, como previa a Teoria Cl\u00E1ssica.',1,100,1);
+I[1][3][1]=new Array('No cr\u00E9dito que culminou na forma\u00E7\u00E3o de uma bolha imobili\u00E1ria, insolv\u00EAncia e quebra dos bancos','',0,0,1);
+I[1][3][2]=new Array('Na postura dos sindicatos que for\u00E7aram os sal\u00E1rios a um n\u00EDvel superior ao do ganho de produ\u00E7\u00E3o','',0,0,1);
+I[1][3][3]=new Array('Na redu\u00E7\u00E3o da produ\u00E7\u00E3o agr\u00EDcola em detrimento da produ\u00E7\u00E3o industrial, que fez disparar pre\u00E7os de alimentos','',0,0,1);
+I[1][3][4]=new Array('No alto consumo de bens fazendo com que a produ\u00E7\u00E3o industrial n\u00E0o conseguisse atender \u00E0 demanda','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('O equil\u00EDbrio do pleno emprego ocorre quando o sal\u00E1rio real \u00E9 igual \u00E0 produtividade marginal do trabalho.','Na an\u00E1lise do mercado de trabalho aceita por Keynes quanto ao lado da demanda, o equil\u00EDbrio de pleno emprego ocorre no ponto em que o sal\u00E1rio real se iguala \u00E0 produtividade marginal do trabalho.',1,100,1);
+I[2][3][1]=new Array('O desemprego projetado faz com que a produ\u00E7\u00E3o cres\u00E7a, independentemente do poder de compra dos trabalhadores','',0,0,1);
+I[2][3][2]=new Array('A exist\u00EAncia de desemprego involunt\u00E1rio se deve \u00E0 falta de capacita\u00E7\u00E3o para os postos criados na economia','',0,0,1);
+I[2][3][3]=new Array('Keynes concordava com Adam Smith sobre a indol\u00EAncia natural do indiv\u00EDduo, que o afastava do emprego','',0,0,1);
+I[2][3][4]=new Array('A id\u00E9ia de desemprego involunt\u00E1rio aproximava a tese de Keynes da Lei de Say quanto ao balanceamento entre produ\u00E7\u00E3o e poder de compra','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('A an\u00E1lise que o empres\u00E1rio faz para decidir sobre investir ou n\u00E3o na produ\u00E7\u00E3o','Para Keynes, o empres\u00E1rio avalia o pre\u00E7o do bem de capital, o rendimento esperado e a taxa de juros do mercado para calcular a Efici\u00EAncia Marginal do Capital e decidir se investe ou n\u00E3o na produ\u00E7\u00E3o.',1,100,1);
+I[3][3][1]=new Array('A ocorr\u00EAncia de incentivos do Governo para fomentar a ind\u00FAstria de bens de capital','',0,0,1);
+I[3][3][2]=new Array('A eleva\u00E7\u00E3o dos pre\u00E7os obtidos pela aplica\u00E7\u00E3o dos bens de capital na produ\u00E7\u00E3o','',0,0,1);
+I[3][3][3]=new Array('A interven\u00E7\u00E3o do Governo por meio de pol\u00EDticas p\u00FAblicas para aquisi\u00E7\u00E3o dos bens de capital, como faz o BNDES','',0,0,1);
+I[3][3][4]=new Array('O acirramento da concorr\u00EAncia no mercado em virtude da expectativa de gera\u00E7\u00E3o de demanda','',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('O lucro do capital se movimenta na mesma dire\u00E7\u00E3o da mais-valia','Na concep\u00E7\u00E3o marxista, o aumento do lucro e do ac\u00FAmulo de capital do burgu\u00EAs caminha na mesma dire\u00E7\u00E3o da eleva\u00E7\u00E3o da taxa de extra\u00E7\u00E3o da mais-valia sobre o trabalho do oper\u00E1rio.',1,100,1);
+I[4][3][1]=new Array('A infla\u00E7\u00E3o retira o poder aquisitivo da popula\u00E7\u00E3o','',0,0,1);
+I[4][3][2]=new Array('H\u00E1 uma evolu\u00E7\u00E3o crescente dos custos de produ\u00E7\u00E3o','',0,0,1);
+I[4][3][3]=new Array('O ex\u00E9rcito de reserva evolui inversamente proporcional \u00E0 produ\u00E7\u00E3o','',0,0,1);
+I[4][3][4]=new Array('N\u00E3o h\u00E1 lucros crescentes a uma taxa decrescente','',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('referem-se \u00E0 mais-valia absoluta e relativa, respectivamente','Marx define "mais-valia absoluta" como aquela obtida pela extens\u00E3o da jornada de trabalho e "mais-valia relativa" como a alcan\u00E7ada pelo ganho de produtividade e intensifica\u00E7\u00E3o tecnol\u00F3gica.',1,100,1);
+I[5][3][1]=new Array('Tendem a aumentar o exercito de reserva','',0,0,1);
+I[5][3][2]=new Array('Geram uma amplia\u00E7\u00E3o da oferta associada a uma redu\u00E7\u00E3o da demanda','',0,0,1);
+I[5][3][3]=new Array('Cria uma falsa id\u00E9ia de aquecimento econ\u00F4mico','',0,0,1);
+I[5][3][4]=new Array('Se devem \u00E0 necessidade de promover o pleno emprego','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('For\u00E7am as empresas \u00E0 lideran\u00E7a no mercado mundial em busca do "lucro extraordin\u00E1rio", acima do normal.','Schumpeter sustenta que o processo de inova\u00E7\u00E3o atrai empresas a buscarem posi\u00E7\u00F5es diferenciadas no mercado para obter o "lucro extraordin\u00E1rio", ou seja, ganhos acima da m\u00E9dia normal do mercado.',1,100,1);
+I[6][3][1]=new Array('Provocam a necessidade de imposi\u00E7\u00E3o de barreiras para impedir a concorr\u00EAncia desleal de tecnologias externas','',0,0,1);
+I[6][3][2]=new Array('reduzem o ciclo de vida do produto, acelerando a obsolesc\u00EAncia e causando danos \u00E0 economia','',0,0,1);
+I[6][3][3]=new Array('Exigem um novo padr\u00E3o de distribui\u00E7\u00E3o de renda que garanta o acesso a essas tecnologias','',0,0,1);
+I[6][3][4]=new Array('Exigem uma renova\u00E7\u00E3o constante de investimentos das empresas para pesquisa e desenvolvimento','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('Que o empres\u00E1rio empreendedor possui a capacidade inovadora, mas, n\u00E3o necessariamente o recurso financeiro, atributo do capitalista.','Schumpeter separa o "empres\u00E1rio empreendedor" (respons\u00E1vel pela capacidade de inovar e criar rupturas) do "capitalista" (detentor dos recursos financeiros que financia a inova\u00E7\u00E3o e assume o risco).',1,100,1);
+I[7][3][1]=new Array('A diferen\u00E7a entre quem \u00E9 inovador, e estabelece novos padr\u00F5es e princ\u00EDpios, e quem \u00E9 conservador, e se contrap\u00F5e \u00E0 novos produtos','',0,0,1);
+I[7][3][2]=new Array('O indiv\u00EDduo que contribui para a forma\u00E7\u00E3o da empresa e o que apenas explora seu potencial financeiro','',0,0,1);
+I[7][3][3]=new Array('As sociedades de capital e ind\u00FAstria como a nova abordagem da firma, que estabelece as rela\u00E7\u00F5es de direito entre os s\u00F3cios','',0,0,1);
+I[7][3][4]=new Array('Os agentes que participam, distintamente, da produ\u00E7\u00E3o e da gest\u00E3o empresarial, com bases mais definidas.','',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('\u00C0 plena ocupa\u00E7\u00E3o dos fatores de produ\u00E7\u00E3o que tamb\u00E9m gerariam pleno emprego','Adam Smith defendia que o livre mercado e a "m\u00E3o invis\u00EDvel" levam naturalmente \u00E0 plena ocupa\u00E7\u00E3o de todos os fatores de produ\u00E7\u00E3o (terra, capital e trabalho), garantindo o equil\u00EDbrio e o pleno emprego.',1,100,1);
+I[8][3][1]=new Array('A livre escolha do indiv\u00EDduo, em virtude da amplia\u00E7\u00E3o de alternativas','',0,0,1);
+I[8][3][2]=new Array('Defini\u00E7\u00E3o das taxas de explora\u00E7\u00E3o que estariam niveladas \u00E0s taxas de juros praticadas','',0,0,1);
+I[8][3][3]=new Array('Cria\u00E7\u00E3o de uma estrutura "tripartite", de compras, vendas e reten\u00E7\u00E3o de impostos','',0,0,1);
+I[8][3][4]=new Array('Expectativa dos ofertantes em distribuir o risco da produ\u00E7\u00E3o pelo mercado.','',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('\u00C9 necess\u00E1ria a interven\u00E7\u00E3o dos bancos centrais na redu\u00E7\u00E3o da emiss\u00E3o de moeda','Para os monetaristas, a infla\u00E7\u00E3o \u00E9 gerada pelo excesso de moeda em circula\u00E7\u00E3o em rela\u00E7\u00E3o \u00E0 produ\u00E7\u00E3o, sendo necess\u00E1ria a atua\u00E7\u00E3o do Banco Central no controle e redu\u00E7\u00E3o da emiss\u00E3o monet\u00E1ria.',1,100,1);
+I[9][3][1]=new Array('A infla\u00E7\u00E3o decrescer\u00E1 pela redu\u00E7\u00E3o dos sal\u00E1rios nominais;','',0,0,1);
+I[9][3][2]=new Array('H\u00E1 a necessidade de introdu\u00E7\u00E3o de dispositivos de controle de emiss\u00E3o de moeda e sal\u00E1rio','',0,0,1);
+I[9][3][3]=new Array('O sal\u00E1rio m\u00EDnimo representa um forma de dificultar o surgimento de disturbios','',0,0,1);
+I[9][3][4]=new Array('\u00C9 fundamental a discuss\u00E3o sindical para a defini\u00E7\u00E3o de pol\u00EDticas salariais de longo prazo','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('O ingresso do Brasil em uma realidade n\u00E9o-liberal','A abertura de mercados, a atenuante de barreiras tarif\u00E1rias e o afastamento de incentivos estatais nos anos 1990 marcaram o ingresso direto do Brasil no ide\u00E1rio e na realidade socioecon\u00F4mica neoliberal.',1,100,1);
+I[10][3][1]=new Array('Uma forma do Governo reduzir o custo Brasil','',0,0,1);
+I[10][3][2]=new Array('Uma pol\u00EDtica monetarista que culminou com a redu\u00E7\u00E3o do emprego','',0,0,1);
+I[10][3][3]=new Array('A amplia\u00E7\u00E3o da concentra\u00E7\u00E3o de renda dos empres\u00E1rios','',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('Que a sociedade gera um conjunto de necessidades muito superior \u00E0  possibilidade de atendimento','O problema econ\u00F4mico central reside na escassez: as necessidades humanas s\u00E3o ilimitadas, enquanto os recursos produtivos s\u00E3o finitos. Na pr\u00E1tica, essa limita\u00E7\u00E3o obriga consumidores e firmas a realizarem escolhas constantes e a estabelecerem prioridades na aloca\u00E7\u00E3o de seus recursos.',1,100,1);
+I[11][3][1]=new Array('Que a saciedade \u00E9 poss\u00EDvel pela maximiza\u00E7\u00E3o da utiliza\u00E7\u00E3o dos recursos produtivos','',0,0,1);
+I[11][3][2]=new Array('Que alguns produtos s\u00E3o raros, o que faz com que n\u00E3o tenham pre\u00E7o','',0,0,1);
+I[11][3][3]=new Array('Que a escassez decorre da perda de utilidade de um bem','',0,0,1);
+I[11][3][4]=new Array('Que o que torna uma pessoa satisfeita \u00E9 consumir','',0,0,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('Pelo fato dos recursos econ\u00F4micos serem limitados','A escassez de bens deriva da limita\u00E7\u00E3o dos fatores de produ\u00E7\u00E3o (terra, trabalho e capital), atribuindo pre\u00E7o a bens econ\u00F4micos. Em termos pr\u00E1ticos, essa finitude de insumos for\u00E7a a gest\u00E3o empresarial a buscar a m\u00E1xima efici\u00EAncia e racionalidade operacional.',1,100,1);
+I[12][3][1]=new Array('Pela economia de mercado, objetivando majora\u00E7\u00E3o dos pre\u00E7os','',0,0,1);
+I[12][3][2]=new Array('Pela amplia\u00E7\u00E3o da oferta de bens n\u00E3o-econ\u00F4micos','',0,0,1);
+I[12][3][3]=new Array('Pelo estabelecimento de padr\u00F5es de comportamento da demanda','',0,0,1);
+I[12][3][4]=new Array('Pela sazonalidade da oferta','',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('A escolha desse bem est\u00E1 associada \u00E0 sobreviv\u00EAncia ou realiza\u00E7\u00E3o social de um indiv\u00EDduo','A Teoria do Consumidor aponta que as escolhas atendem tanto a necessidades biol\u00F3gicas de sobreviv\u00EAncia quanto \u00E0 busca por status e integra\u00E7\u00E3o social. Na pr\u00E1tica, isso explica varia\u00E7\u00F5es no padr\u00E3o de consumo conforme a renda e a percep\u00E7\u00E3o de valor do indiv\u00EDduo.',1,100,1);
+I[13][3][1]=new Array('Esse bem \u00E9 um bem p\u00FAblico','',0,0,1);
+I[13][3][2]=new Array('H\u00E1 liberdade de escolha, n\u00E3o s\u00F3 na economia de mercado, mas tamb\u00E9m, na economia socialista','',0,0,1);
+I[13][3][3]=new Array('As necessidades humanas s\u00E3o definidas pela oferta, pois a oferta cria sua pr\u00F3pria demanda','',0,0,1);
+I[13][3][4]=new Array('O desejo \u00E9 interpretado de forma coletiva pela economia','',0,0,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('\u00C9 levar \u00E0 maior efici\u00EAncia no uso de recursos escassos','No livre mercado, os pre\u00E7os operam como sinalizadores que orientam a aloca\u00E7\u00E3o e o racionamento dos bens de forma eficiente. Praticamente, esse mecanismo evita desabastecimentos e otimiza a distribui\u00E7\u00E3o da produ\u00E7\u00E3o sem necessidade de controle governamental.',1,100,1);
+I[14][3][1]=new Array('\u00C9 meramente estat\u00EDstica, considerando que a economia se pauta nas quantidades agregadas','',0,0,1);
+I[14][3][2]=new Array('\u00C9 peritir o tabelamento, em casos de controle de infla\u00E7\u00E3o','',0,0,1);
+I[14][3][3]=new Array('\u00C9 permitir o c\u00E1lculo da evolu\u00E7\u00E3o dos lucros sobre a mais-valia','',0,0,1);
+I[14][3][4]=new Array('\u00C9 definir a renda.','',0,0,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('As condi\u00E7\u00F5es de associa\u00E7\u00E3o do saber cient\u00EDfico e as necessidades dos indiv\u00EDduos','A tecnologia traduz a convers\u00E3o de conhecimentos cient\u00EDficos em m\u00E9todos e processos aplicados \u00E0s demandas da sociedade. Na pr\u00E1tica corporativa, o avan\u00E7o tecnol\u00F3gico amplia a produtividade fabril e consolida diferenciais competitivos sustent\u00E1veis.',1,100,1);
+I[15][3][1]=new Array('O grau de entendimento das melhores pr\u00E1ticas de produ\u00E7\u00E3o','',0,0,1);
+I[15][3][2]=new Array('A capacidade instalada dos processos produtivos','',0,0,1);
+I[15][3][3]=new Array('O emprego de m\u00E1quinas para ampliar as quantidades de produ\u00E7\u00E3o','',0,0,1);
+I[15][3][4]=new Array('Os recursos inclusos nos bens de capital, que originam os royalties','',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('Falta de efici\u00EAncia alocativa, pois os recursos n\u00E3o est\u00E3o dispon\u00EDveis','',1,100,1);
+I[16][3][1]=new Array('Falta de efici\u00EAncia produtiva, j\u00E1 que n\u00E3o existem mais aeroportos','',0,0,1);
+I[16][3][2]=new Array('Pleno emprego, j\u00E1 que todos os controladores, da reserva e da ativa, est\u00E3o sendo utilizados','',0,0,1);
+I[16][3][3]=new Array('Queda da demanda por bens e servi\u00E7os da estrutura','',0,0,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('Terra, capital e trabalho s\u00E3o recursos econ\u00F4micos utilizados em propor\u00E7\u00E3o menor \u00E0 necess\u00E1ria','',1,100,1);
+I[17][3][1]=new Array('O ser humano n\u00E3o atingiu sua maturidade econ\u00F4mica, logo, possui necessidades insaci\u00E1veis','',0,0,1);
+I[17][3][2]=new Array('As necessidades humanas ilimitadas s\u00E3o provocadas artificialmente pela grande oferta de produtos manufaturados','',0,0,1);
+I[17][3][3]=new Array('A demanda sempre ser\u00E1 superior \u00E0 oferta','',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('A EpD sendo inel\u00E1stica permite oscila\u00E7\u00E3o positiva do pre\u00E7o.','',1,100,1);
+I[18][3][1]=new Array('A Epd seno inel\u00E1stica pressup\u00F5e a descontinuidade do produto','',0,0,1);
+I[18][3][2]=new Array('A Epd sendo el\u00E1stica n\u00E3o possibilita o aumento das quantidades de vendas','',0,0,1);
+I[18][3][3]=new Array('A EpD sendo el\u00E1stica, determina que o produto deve ser descontinuado;','',0,0,1);
+I[18][3][4]=new Array('A EpD sendo el\u00E1stica pressup\u00F5e a alta dos bens auxiliares.','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('Esse produto provavelmente \u00E9 um bem essencial, em raz\u00E3o da performance pre\u00E7o-vendas','',1,100,1);
+I[19][3][1]=new Array('Esse produto n\u00E3o \u00E9 um bem essencial, e provavelmente vai deixar de ser comprado gradativamente','',0,0,1);
+I[19][3][2]=new Array('As vendas desse produto variaram muito mais do que os pre\u00E7os!!!','',0,0,1);
+I[19][3][3]=new Array('Os pre\u00E7os desse produto influenciam a demanda.','',0,0,1);
+I[19][3][4]=new Array('A empresa apostou adequadamente em um nicho de mercado.','',0,0,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('A demanda pelo bem principal cai','',1,100,1);
+I[20][3][1]=new Array('A demanda pelo bem principal sobe','',0,0,1);
+I[20][3][2]=new Array('Altera-se o custo de oportunidade do bem principal','',0,0,1);
+I[20][3][3]=new Array('Altera-se o custo marginal do bem principal','',0,0,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('tendem a reduzir a oferta de bens de consumo, se houver inelasticidade-pre\u00E7o da demanda','',1,100,1);
+I[21][3][1]=new Array('tendem a aumentar a oferta de bens de consumo, se houver inelasticidade-pre\u00E7o da demanda','',0,0,1);
+I[21][3][2]=new Array('N\u00E3o alterar\u00E3o a demanda pela aquisi\u00E7\u00E3o de bens de capital','',0,0,1);
+I[21][3][3]=new Array('Alterar\u00E3o a oferta de bens de consumo, m\u00E3o n\u00E3o a demanda.','',0,0,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='0';
+I[22][3]=new Array();
+I[22][3][0]=new Array('Produto Interno L\u00EDquido (PIL)','Obt\u00E9m-se o Produto Interno L\u00EDquido (PIL) deduzindo-se a deprecia\u00E7\u00E3o (D) do valor total do PIB, expressa pela f\u00F3rmula PIL = PIB - D. A deprecia\u00E7\u00E3o reflete a perda de valor econ\u00F4mico e de efici\u00EAncia dos ativos fixos ao longo do tempo.',1,100,1);
+I[22][3][1]=new Array('Renda Nacional Bruta (RNB)','',0,0,1);
+I[22][3][2]=new Array('Carga Tribut\u00E1ria L\u00EDquida (CTL)','',0,0,1);
+I[22][3][3]=new Array('Super\u00E1vit Prim\u00E1rio','',0,0,1);
+I[22][3][4]=new Array('Produto Nacional Bruto (PNB)','',0,0,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='0';
+I[23][3]=new Array();
+I[23][3][0]=new Array('Funciona como elo entre o PPA e a LOA, ajustando as prioridades e metas anuais e orientando a elabora\u00E7\u00E3o da pol\u00EDtica fiscal.','A LDO orienta a elabora\u00E7\u00E3o da Lei Or\u00E7ament\u00E1ria Anual (LOA) e estabelece as metas e prioridades para o exerc\u00EDcio seguinte, atuando como o elo de liga\u00E7\u00E3o entre o planejamento estrat\u00E9gico de m\u00E9dio prazo (PPA) e a execu\u00E7\u00E3o anual (LOA).',1,100,1);
+I[23][3][1]=new Array('Define e fixa as diretrizes, objetivos e programas estrat\u00E9gicos de m\u00E9dio prazo (quatro anos) do Poder Executivo.','',0,0,1);
+I[23][3][2]=new Array('Estima a arrecada\u00E7\u00E3o de receitas e fixa detalhadamente a programa\u00E7\u00E3o dos usos e despesas para o exerc\u00EDcio financeiro de um \u00FAnico ano.','',0,0,1);
+I[23][3][3]=new Array('Regula a emiss\u00E3o de t\u00EDtulos da d\u00EDvida p\u00FAblica federal pelo Tesouro Nacional para financiamento do mercado secund\u00E1rio.','',0,0,1);
+I[23][3][4]=new Array('Estabelece as regras de transpar\u00EAncia cont\u00E1bil aplicadas exclusivamente \u00E0s contas de empresas estatais dependentes.','',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='0';
+I[24][3]=new Array();
+I[24][3][0]=new Array('50% da Receita Corrente L\u00EDquida (RCL)','A LRF define expressamente que o teto para pagamento de pessoal n\u00E3o pode ultrapassar 50% da Receita Corrente L\u00EDquida (RCL) no caso da Uni\u00E3o e 60% no caso dos Estados e Munic\u00EDpios.',1,100,1);
+I[24][3][1]=new Array('40% da Receita Corrente L\u00EDquida (RCL)','',0,0,1);
+I[24][3][2]=new Array('60% da Receita Corrente L\u00EDquida (RCL)','',0,0,1);
+I[24][3][3]=new Array('70% da Receita Corrente L\u00EDquida (RCL)','',0,0,1);
+I[24][3][4]=new Array('80% da Receita Corrente L\u00EDquida (RCL)','',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='0';
+I[25][3]=new Array();
+I[25][3][0]=new Array('Varia entre 0 e 1, no qual o valor 0 representa a igualdade perfeita de renda e o valor 1 indica a concentra\u00E7\u00E3o total da riqueza em uma s\u00F3 pessoa.','O Coeficiente de Gini varia de 0 (zero) a 1 (um). O valor 0 indica que todos os indiv\u00EDduos possuem exatamente a mesma renda (igualdade absoluta), enquanto o valor 1 representa a m\u00E1xima concentra\u00E7\u00E3o de riqueza em uma \u00FAnica pessoa.',1,100,1);
+I[25][3][1]=new Array('Varia de 0 a 100, no qual 0 representa desigualdade extrema e 100 indica igualdade perfeita de renda.','',0,0,1);
+I[25][3][2]=new Array('\u00C9 derivado da Curva de Lorenz, indicando que quanto mais distante a curva estiver da reta de 45\u00BA, menor \u00E9 a concentra\u00E7\u00E3o de renda.','',0,0,1);
+I[25][3][3]=new Array('Avalia exclusivamente a expectativa de vida e os anos m\u00E9dios de escolaridade da popula\u00E7\u00E3o.','',0,0,1);
+I[25][3][4]=new Array('Varia entre -1 e 1, no qual valores negativos indicam equil\u00EDbrio fiscal e valores positivos indicam d\u00E9ficit social.','',0,0,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='0';
+I[26][3]=new Array();
+I[26][3][0]=new Array('\u00C9 a diferen\u00E7a entre as receitas prim\u00E1rias e as despesas prim\u00E1rias, desconsiderando receitas e despesas financeiras, como juros da d\u00EDvida p\u00FAblica.','O Saldo Prim\u00E1rio exclui as despesas e receitas financeiras (como o pagamento de juros e amortiza\u00E7\u00F5es da d\u00EDvida p\u00FAblica). Sua finalidade \u00E9 verificar se as receitas operacionais do governo cobrem seus gastos correntes e de investimento no exerc\u00EDcio.',1,100,1);
+I[26][3][1]=new Array('\u00C9 o valor do PIB somado ao saldo positivo da balan\u00E7a comercial (exporta\u00E7\u00F5es menos importa\u00E7\u00F5es).','',0,0,1);
+I[26][3][2]=new Array('\u00C9 a diferen\u00E7a entre o total de tributos arrecadados e o total das despesas com amortiza\u00E7\u00E3o de t\u00EDtulos p\u00FAblicos.','',0,0,1);
+I[26][3][3]=new Array('\u00C9 a quantia referente ao valor l\u00EDquido enviado ao exterior para pagamento de royalties e dividendos.','',0,0,1);
+I[26][3][4]=new Array('\u00C9 a arrecada\u00E7\u00E3o obtida exclusivamente por meio do Imposto de Renda ajustado pela infla\u00E7\u00E3o oficial do per\u00EDodo.','',0,0,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='0';
+I[27][3]=new Array();
+I[27][3][0]=new Array('INPC (\u00CDndice Nacional de Pre\u00E7os ao Consumidor)','O INPC observa as varia\u00E7\u00F5es do custo de vida para a popula\u00E7\u00E3o de baixa renda (1 a 5 sal\u00E1rios m\u00EDnimos), sendo o \u00EDndice de infla\u00E7\u00E3o de refer\u00EAncia para a pol\u00EDtica de reajuste e valoriza\u00E7\u00E3o do sal\u00E1rio m\u00EDnimo nacional.',1,100,1);
+I[27][3][1]=new Array('IPCA (\u00CDndice de Pre\u00E7os ao Consumidor Amplo)','',0,0,1);
+I[27][3][2]=new Array('IGP-M (\u00CDndice Geral de Pre\u00E7os do Mercado)','',0,0,1);
+I[27][3][3]=new Array('Carga Tribut\u00E1ria Bruta (CTB)','',0,0,1);
+I[27][3][4]=new Array('IDH (\u00CDndice de Desenvolvimento Humano)','',0,0,1);
+
+
+function StartUp(){
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle"></h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"></div>
+</div>
+
+
+<div id="ContainerDiv">
+
+
+
+<div class="ExerciseContainer">
+
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&#160;</span>
+
+<button id="NextQButton" class="FuncButton" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Keynes em rela&#x00E7;&#x00E3;o &#x00E0; validade da Lei de Say, argumentava que, em momento de crise...</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;As pessoas decidem poupar recursos, n&#x00E3;o gastando sua renda total</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;As pessoas gastam mais, pois buscam for&#x00E7;ar o novo equil&#x00ED;brio de mercado</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A postura do Estado deveria ser neutra, permitindo ao mercado agir expontaneamente (Laisses-fair)</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O cr&#x00E9;dito representaria invariavelmente, o vetor de agravamento da recess&#x00E3;o</li><li id="Q_0_4"><button class="FuncButton" id="Q_0_4_Btn" onclick="CheckMCAnswer(0,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O p&#x00E2;nico no mercado culminaria com a inviabiliza&#x00E7;&#x00E3;o dos neg&#x00F3;cios nas bolsas</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">A raiz da crise de 1929, que foi um dos motivos para o surgimento das contraposi&#x00E7;&#x00F5;es &#x00E0; Teoria Cl&#x00E1;ssica estava...</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No descompasso da produ&#x00E7;&#x00E3;o que, contrariando &#x00E0; Teoria Cl&#x00E1;ssica, n&#x00E3;o gerou uma demanda correspondente.</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No cr&#x00E9;dito que culminou na forma&#x00E7;&#x00E3;o de uma bolha imobili&#x00E1;ria, insolv&#x00EA;ncia e quebra dos bancos</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Na postura dos sindicatos que for&#x00E7;aram os sal&#x00E1;rios a um n&#x00ED;vel superior ao do ganho de produ&#x00E7;&#x00E3;o</li><li id="Q_1_3"><button class="FuncButton" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Na redu&#x00E7;&#x00E3;o da produ&#x00E7;&#x00E3;o agr&#x00ED;cola em detrimento da produ&#x00E7;&#x00E3;o industrial, que fez disparar pre&#x00E7;os de alimentos</li><li id="Q_1_4"><button class="FuncButton" id="Q_1_4_Btn" onclick="CheckMCAnswer(1,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No alto consumo de bens fazendo com que a produ&#x00E7;&#x00E3;o industrial n&#x00E0;o conseguisse atender &#x00E0; demanda</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Keynes postulou a exist&#x00EA;ncia do desemprego volunt&#x00E1;rio e do desemprego projetado. Sob essa &#x00F3;tica, &#x00E9; correto afirmar que...</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O equil&#x00ED;brio do pleno emprego ocorre quando o sal&#x00E1;rio real &#x00E9; igual &#x00E0; produtividade marginal do trabalho.</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O desemprego projetado faz com que a produ&#x00E7;&#x00E3;o cres&#x00E7;a, independentemente do poder de compra dos trabalhadores</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A exist&#x00EA;ncia de desemprego involunt&#x00E1;rio se deve &#x00E0; falta de capacita&#x00E7;&#x00E3;o para os postos criados na economia</li><li id="Q_2_3"><button class="FuncButton" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Keynes concordava com Adam Smith sobre a indol&#x00EA;ncia natural do indiv&#x00ED;duo, que o afastava do emprego</li><li id="Q_2_4"><button class="FuncButton" id="Q_2_4_Btn" onclick="CheckMCAnswer(2,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A id&#x00E9;ia de desemprego involunt&#x00E1;rio aproximava a tese de Keynes da Lei de Say quanto ao balanceamento entre produ&#x00E7;&#x00E3;o e poder de compra</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Segundo Keynes, fatores como o pre&#x00E7;o de um bem de capital, o rendimento anual proporcionado por esse bem e a taxa de juros do mercado, seriam determinantes para...</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A an&#x00E1;lise que o empres&#x00E1;rio faz para decidir sobre investir ou n&#x00E3;o na produ&#x00E7;&#x00E3;o</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A ocorr&#x00EA;ncia de incentivos do Governo para fomentar a ind&#x00FA;stria de bens de capital</li><li id="Q_3_2"><button class="FuncButton" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A eleva&#x00E7;&#x00E3;o dos pre&#x00E7;os obtidos pela aplica&#x00E7;&#x00E3;o dos bens de capital na produ&#x00E7;&#x00E3;o</li><li id="Q_3_3"><button class="FuncButton" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A interven&#x00E7;&#x00E3;o do Governo por meio de pol&#x00ED;ticas p&#x00FA;blicas para aquisi&#x00E7;&#x00E3;o dos bens de capital, como faz o BNDES</li><li id="Q_3_4"><button class="FuncButton" id="Q_3_4_Btn" onclick="CheckMCAnswer(3,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O acirramento da concorr&#x00EA;ncia no mercado em virtude da expectativa de gera&#x00E7;&#x00E3;o de demanda</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Sob a concep&#x00E7;&#x00E3;o marxista, a taxa de explora&#x00E7;&#x00E3;o tende a aumentar com o tempo. isso se deve ao fato de que...</div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O lucro do capital se movimenta na mesma dire&#x00E7;&#x00E3;o da mais-valia</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A infla&#x00E7;&#x00E3;o retira o poder aquisitivo da popula&#x00E7;&#x00E3;o</li><li id="Q_4_2"><button class="FuncButton" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;H&#x00E1; uma evolu&#x00E7;&#x00E3;o crescente dos custos de produ&#x00E7;&#x00E3;o</li><li id="Q_4_3"><button class="FuncButton" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O ex&#x00E9;rcito de reserva evolui inversamente proporcional &#x00E0; produ&#x00E7;&#x00E3;o</li><li id="Q_4_4"><button class="FuncButton" id="Q_4_4_Btn" onclick="CheckMCAnswer(4,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;N&#x00E3;o h&#x00E1; lucros crescentes a uma taxa decrescente</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">Segundo as id&#x00E9;ias marxistas, o aumento da jornada de trabalho e o aumento da produtividade...</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;referem-se &#x00E0; mais-valia absoluta e relativa, respectivamente</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tendem a aumentar o exercito de reserva</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Geram uma amplia&#x00E7;&#x00E3;o da oferta associada a uma redu&#x00E7;&#x00E3;o da demanda</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Cria uma falsa id&#x00E9;ia de aquecimento econ&#x00F4;mico</li><li id="Q_5_4"><button class="FuncButton" id="Q_5_4_Btn" onclick="CheckMCAnswer(5,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Se devem &#x00E0; necessidade de promover o pleno emprego</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">Segundo schumpeter, a tecnologia e a inova&#x00E7;&#x00E3;o fazem surgir novos produtos, que geram modifica&#x00E7;&#x00F5;es no cen&#x00E1;rio de oferta e demanda, pois...</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;For&#x00E7;am as empresas &#x00E0; lideran&#x00E7;a no mercado mundial em busca do "lucro extraordin&#x00E1;rio", acima do normal.</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Provocam a necessidade de imposi&#x00E7;&#x00E3;o de barreiras para impedir a concorr&#x00EA;ncia desleal de tecnologias externas</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;reduzem o ciclo de vida do produto, acelerando a obsolesc&#x00EA;ncia e causando danos &#x00E0; economia</li><li id="Q_6_3"><button class="FuncButton" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Exigem um novo padr&#x00E3;o de distribui&#x00E7;&#x00E3;o de renda que garanta o acesso a essas tecnologias</li><li id="Q_6_4"><button class="FuncButton" id="Q_6_4_Btn" onclick="CheckMCAnswer(6,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Exigem uma renova&#x00E7;&#x00E3;o constante de investimentos das empresas para pesquisa e desenvolvimento</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Schumpeter promove a separa&#x00E7;&#x00E3;o do capitalista e do "empres&#x00E1;rio empreendedor", definindo...</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que o empres&#x00E1;rio empreendedor possui a capacidade inovadora, mas, n&#x00E3;o necessariamente o recurso financeiro, atributo do capitalista.</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A diferen&#x00E7;a entre quem &#x00E9; inovador, e estabelece novos padr&#x00F5;es e princ&#x00ED;pios, e quem &#x00E9; conservador, e se contrap&#x00F5;e &#x00E0; novos produtos</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O indiv&#x00ED;duo que contribui para a forma&#x00E7;&#x00E3;o da empresa e o que apenas explora seu potencial financeiro</li><li id="Q_7_3"><button class="FuncButton" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;As sociedades de capital e ind&#x00FA;stria como a nova abordagem da firma, que estabelece as rela&#x00E7;&#x00F5;es de direito entre os s&#x00F3;cios</li><li id="Q_7_4"><button class="FuncButton" id="Q_7_4_Btn" onclick="CheckMCAnswer(7,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Os agentes que participam, distintamente, da produ&#x00E7;&#x00E3;o e da gest&#x00E3;o empresarial, com bases mais definidas.</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Segundo Adam Smith, por meio do liberalismo econ&#x00F4;mico seria poss&#x00ED;vel alcan&#x00E7;ar o equil&#x00ED;brio no mercado. isso se deveria a....</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C0; plena ocupa&#x00E7;&#x00E3;o dos fatores de produ&#x00E7;&#x00E3;o que tamb&#x00E9;m gerariam pleno emprego</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A livre escolha do indiv&#x00ED;duo, em virtude da amplia&#x00E7;&#x00E3;o de alternativas</li><li id="Q_8_2"><button class="FuncButton" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Defini&#x00E7;&#x00E3;o das taxas de explora&#x00E7;&#x00E3;o que estariam niveladas &#x00E0;s taxas de juros praticadas</li><li id="Q_8_3"><button class="FuncButton" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Cria&#x00E7;&#x00E3;o de uma estrutura "tripartite", de compras, vendas e reten&#x00E7;&#x00E3;o de impostos</li><li id="Q_8_4"><button class="FuncButton" id="Q_8_4_Btn" onclick="CheckMCAnswer(8,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Expectativa dos ofertantes em distribuir o risco da produ&#x00E7;&#x00E3;o pelo mercado.</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">O desnivelamento entre a moeda em circula&#x00E7;&#x00E3;o e a produ&#x00E7;&#x00E3;o, segundo os monetaristas &#x00E9; a causa da infla&#x00E7;&#x00E3;o. Sendo assim...</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; necess&#x00E1;ria a interven&#x00E7;&#x00E3;o dos bancos centrais na redu&#x00E7;&#x00E3;o da emiss&#x00E3;o de moeda</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A infla&#x00E7;&#x00E3;o decrescer&#x00E1; pela redu&#x00E7;&#x00E3;o dos sal&#x00E1;rios nominais;</li><li id="Q_9_2"><button class="FuncButton" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;H&#x00E1; a necessidade de introdu&#x00E7;&#x00E3;o de dispositivos de controle de emiss&#x00E3;o de moeda e sal&#x00E1;rio</li><li id="Q_9_3"><button class="FuncButton" id="Q_9_3_Btn" onclick="CheckMCAnswer(9,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O sal&#x00E1;rio m&#x00ED;nimo representa um forma de dificultar o surgimento de disturbios</li><li id="Q_9_4"><button class="FuncButton" id="Q_9_4_Btn" onclick="CheckMCAnswer(9,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; fundamental a discuss&#x00E3;o sindical para a defini&#x00E7;&#x00E3;o de pol&#x00ED;ticas salariais de longo prazo</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">Em 1991, as barreiras de mercado foram atenuadas no Brasil e pudemos importar produtos de diferentes nacionalidades. Os produtos brasileiros tiveram que se adaptar, j&#x00E1; que o Governo n&#x00E3;o interviu com benef&#x00ED;cios fiscais. Esse evento determina diretamente:</div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O ingresso do Brasil em uma realidade n&#x00E9;o-liberal</li><li id="Q_10_1"><button class="FuncButton" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Uma forma do Governo reduzir o custo Brasil</li><li id="Q_10_2"><button class="FuncButton" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Uma pol&#x00ED;tica monetarista que culminou com a redu&#x00E7;&#x00E3;o do emprego</li><li id="Q_10_3"><button class="FuncButton" id="Q_10_3_Btn" onclick="CheckMCAnswer(10,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A amplia&#x00E7;&#x00E3;o da concentra&#x00E7;&#x00E3;o de renda dos empres&#x00E1;rios</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">O ato de consumir est&#x00E1; presente em toda a sociedade e pode-se dizer:</div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que a sociedade gera um conjunto de necessidades muito superior &#x00E0; possibilidade de atendimento</li><li id="Q_11_1"><button class="FuncButton" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que a saciedade &#x00E9; poss&#x00ED;vel pela maximiza&#x00E7;&#x00E3;o da utiliza&#x00E7;&#x00E3;o dos recursos produtivos</li><li id="Q_11_2"><button class="FuncButton" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que alguns produtos s&#x00E3;o raros, o que faz com que n&#x00E3;o tenham pre&#x00E7;o</li><li id="Q_11_3"><button class="FuncButton" id="Q_11_3_Btn" onclick="CheckMCAnswer(11,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que a escassez decorre da perda de utilidade de um bem</li><li id="Q_11_4"><button class="FuncButton" id="Q_11_4_Btn" onclick="CheckMCAnswer(11,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que o que torna uma pessoa satisfeita &#x00E9; consumir</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">A escassez de bens econ&#x00F4;micos pode ser explicada...</div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Pelo fato dos recursos econ&#x00F4;micos serem limitados</li><li id="Q_12_1"><button class="FuncButton" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Pela economia de mercado, objetivando majora&#x00E7;&#x00E3;o dos pre&#x00E7;os</li><li id="Q_12_2"><button class="FuncButton" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Pela amplia&#x00E7;&#x00E3;o da oferta de bens n&#x00E3;o-econ&#x00F4;micos</li><li id="Q_12_3"><button class="FuncButton" id="Q_12_3_Btn" onclick="CheckMCAnswer(12,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Pelo estabelecimento de padr&#x00F5;es de comportamento da demanda</li><li id="Q_12_4"><button class="FuncButton" id="Q_12_4_Btn" onclick="CheckMCAnswer(12,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Pela sazonalidade da oferta</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">As necessidades humanas est&#x00E3;o associadas &#x00E0; manifesta&#x00E7;&#x00E3;o de desejo e escolha de um bem. &#x00C9; poss&#x00ED;vel afirmar, ent&#x00E3;o, que</div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A escolha desse bem est&#x00E1; associada &#x00E0; sobreviv&#x00EA;ncia ou realiza&#x00E7;&#x00E3;o social de um indiv&#x00ED;duo</li><li id="Q_13_1"><button class="FuncButton" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Esse bem &#x00E9; um bem p&#x00FA;blico</li><li id="Q_13_2"><button class="FuncButton" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;H&#x00E1; liberdade de escolha, n&#x00E3;o s&#x00F3; na economia de mercado, mas tamb&#x00E9;m, na economia socialista</li><li id="Q_13_3"><button class="FuncButton" id="Q_13_3_Btn" onclick="CheckMCAnswer(13,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;As necessidades humanas s&#x00E3;o definidas pela oferta, pois a oferta cria sua pr&#x00F3;pria demanda</li><li id="Q_13_4"><button class="FuncButton" id="Q_13_4_Btn" onclick="CheckMCAnswer(13,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O desejo &#x00E9; interpretado de forma coletiva pela economia</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">A fun&#x00E7;&#x00E3;o dos pre&#x00E7;os nas economias de mercado...</div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; levar &#x00E0; maior efici&#x00EA;ncia no uso de recursos escassos</li><li id="Q_14_1"><button class="FuncButton" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; meramente estat&#x00ED;stica, considerando que a economia se pauta nas quantidades agregadas</li><li id="Q_14_2"><button class="FuncButton" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; peritir o tabelamento, em casos de controle de infla&#x00E7;&#x00E3;o</li><li id="Q_14_3"><button class="FuncButton" id="Q_14_3_Btn" onclick="CheckMCAnswer(14,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; permitir o c&#x00E1;lculo da evolu&#x00E7;&#x00E3;o dos lucros sobre a mais-valia</li><li id="Q_14_4"><button class="FuncButton" id="Q_14_4_Btn" onclick="CheckMCAnswer(14,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; definir a renda.</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">A produ&#x00E7;&#x00E3;o &#x00E9; importante sobre dois aspectos: fornecer produtos e distribuir riqueza. Para que haja produ&#x00E7;&#x00E3;o, deve haver trabalho e capital f&#x00ED;sico, que s&#x00E3;o combinados com a tecnologia. Assim, tecnologia &#x00E9;</div><ol class="MCAnswers"><li id="Q_15_0"><button class="FuncButton" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;As condi&#x00E7;&#x00F5;es de associa&#x00E7;&#x00E3;o do saber cient&#x00ED;fico e as necessidades dos indiv&#x00ED;duos</li><li id="Q_15_1"><button class="FuncButton" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O grau de entendimento das melhores pr&#x00E1;ticas de produ&#x00E7;&#x00E3;o</li><li id="Q_15_2"><button class="FuncButton" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A capacidade instalada dos processos produtivos</li><li id="Q_15_3"><button class="FuncButton" id="Q_15_3_Btn" onclick="CheckMCAnswer(15,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O emprego de m&#x00E1;quinas para ampliar as quantidades de produ&#x00E7;&#x00E3;o</li><li id="Q_15_4"><button class="FuncButton" id="Q_15_4_Btn" onclick="CheckMCAnswer(15,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Os recursos inclusos nos bens de capital, que originam os royalties</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">Vimos nos &#x00FA;ltimos anos, que o sistema aeroportu&#x00E1;rio brasileiro n&#x00E3;o atende &#x00E0;s necessidades de seus usu&#x00E1;rios, por ter recursos inferiores aos demandados. Quando as aeronaves n&#x00E3;o podem voar em virtude da falta de controladores, isso representa:</div><ol class="MCAnswers"><li id="Q_16_0"><button class="FuncButton" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Falta de efici&#x00EA;ncia alocativa, pois os recursos n&#x00E3;o est&#x00E3;o dispon&#x00ED;veis</li><li id="Q_16_1"><button class="FuncButton" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Falta de efici&#x00EA;ncia produtiva, j&#x00E1; que n&#x00E3;o existem mais aeroportos</li><li id="Q_16_2"><button class="FuncButton" id="Q_16_2_Btn" onclick="CheckMCAnswer(16,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Pleno emprego, j&#x00E1; que todos os controladores, da reserva e da ativa, est&#x00E3;o sendo utilizados</li><li id="Q_16_3"><button class="FuncButton" id="Q_16_3_Btn" onclick="CheckMCAnswer(16,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Queda da demanda por bens e servi&#x00E7;os da estrutura</li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">As necessidades humanas s&#x00E3;o ilimitadas, pelo fato dos bens e servi&#x00E7;os n&#x00E3;o existirem na mesma propor&#x00E7;&#x00E3;o que a demandada. Portanto...</div><ol class="MCAnswers"><li id="Q_17_0"><button class="FuncButton" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Terra, capital e trabalho s&#x00E3;o recursos econ&#x00F4;micos utilizados em propor&#x00E7;&#x00E3;o menor &#x00E0; necess&#x00E1;ria</li><li id="Q_17_1"><button class="FuncButton" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;O ser humano n&#x00E3;o atingiu sua maturidade econ&#x00F4;mica, logo, possui necessidades insaci&#x00E1;veis</li><li id="Q_17_2"><button class="FuncButton" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;As necessidades humanas ilimitadas s&#x00E3;o provocadas artificialmente pela grande oferta de produtos manufaturados</li><li id="Q_17_3"><button class="FuncButton" id="Q_17_3_Btn" onclick="CheckMCAnswer(17,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A demanda sempre ser&#x00E1; superior &#x00E0; oferta</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">Um produto vinha apresentando o mesmo pre&#x00E7;o j&#x00E1; ha um ano, com uma tend&#x00EA;ncia de queda de vendas. O fabricante reduziu o pre&#x00E7;o de $10 para $9,50, provocando uma queda das vendas de 1.300 para 1290 unidades. Sendo assim:</div><ol class="MCAnswers"><li id="Q_18_0"><button class="FuncButton" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A EpD sendo inel&#x00E1;stica permite oscila&#x00E7;&#x00E3;o positiva do pre&#x00E7;o.</li><li id="Q_18_1"><button class="FuncButton" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A Epd seno inel&#x00E1;stica pressup&#x00F5;e a descontinuidade do produto</li><li id="Q_18_2"><button class="FuncButton" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A Epd sendo el&#x00E1;stica n&#x00E3;o possibilita o aumento das quantidades de vendas</li><li id="Q_18_3"><button class="FuncButton" id="Q_18_3_Btn" onclick="CheckMCAnswer(18,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A EpD sendo el&#x00E1;stica, determina que o produto deve ser descontinuado;</li><li id="Q_18_4"><button class="FuncButton" id="Q_18_4_Btn" onclick="CheckMCAnswer(18,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A EpD sendo el&#x00E1;stica pressup&#x00F5;e a alta dos bens auxiliares.</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">Uma empresa praticou uma alta exorbitante no pre&#x00E7;o do seu produto (de $4 para $10). As vendas manifestaram uma subida de 70 p&#x00E7;s para 120 p&#x00E7;s.</div><ol class="MCAnswers"><li id="Q_19_0"><button class="FuncButton" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Esse produto provavelmente &#x00E9; um bem essencial, em raz&#x00E3;o da performance pre&#x00E7;o-vendas</li><li id="Q_19_1"><button class="FuncButton" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Esse produto n&#x00E3;o &#x00E9; um bem essencial, e provavelmente vai deixar de ser comprado gradativamente</li><li id="Q_19_2"><button class="FuncButton" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;As vendas desse produto variaram muito mais do que os pre&#x00E7;os!!!</li><li id="Q_19_3"><button class="FuncButton" id="Q_19_3_Btn" onclick="CheckMCAnswer(19,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Os pre&#x00E7;os desse produto influenciam a demanda.</li><li id="Q_19_4"><button class="FuncButton" id="Q_19_4_Btn" onclick="CheckMCAnswer(19,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A empresa apostou adequadamente em um nicho de mercado.</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">Bens substitutos influenciam na demanda por um certo produto. Se os pre&#x00E7;os desses bens caem...</div><ol class="MCAnswers"><li id="Q_20_0"><button class="FuncButton" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A demanda pelo bem principal cai</li><li id="Q_20_1"><button class="FuncButton" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A demanda pelo bem principal sobe</li><li id="Q_20_2"><button class="FuncButton" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Altera-se o custo de oportunidade do bem principal</li><li id="Q_20_3"><button class="FuncButton" id="Q_20_3_Btn" onclick="CheckMCAnswer(20,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Altera-se o custo marginal do bem principal</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">Os pre&#x00E7;os dos recursos de capital influenciam a oferta de bens de consumo e, se subirem...</div><ol class="MCAnswers"><li id="Q_21_0"><button class="FuncButton" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;tendem a reduzir a oferta de bens de consumo, se houver inelasticidade-pre&#x00E7;o da demanda</li><li id="Q_21_1"><button class="FuncButton" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;tendem a aumentar a oferta de bens de consumo, se houver inelasticidade-pre&#x00E7;o da demanda</li><li id="Q_21_2"><button class="FuncButton" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;N&#x00E3;o alterar&#x00E3;o a demanda pela aquisi&#x00E7;&#x00E3;o de bens de capital</li><li id="Q_21_3"><button class="FuncButton" id="Q_21_3_Btn" onclick="CheckMCAnswer(21,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Alterar&#x00E3;o a oferta de bens de consumo, m&#x00E3;o n&#x00E3;o a demanda.</li></ol></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">O Produto Interno Bruto (PIB) mede o valor total, a pre&#x00E7;os de mercado, de todos os bens e servi&#x00E7;os finais produzidos em um pa&#x00ED;s durante o per&#x00ED;odo de um ano. Quando se deseja mensurar a perda gradual de valor da capacidade produtiva gerada pelo desgaste f&#x00ED;sico e obsolesc&#x00EA;ncia tecnol&#x00F3;gica do estoque de capital, deduz-se a deprecia&#x00E7;&#x00E3;o do PIB. Essa subtra&#x00E7;&#x00E3;o resulta em qual agregado econ&#x00F4;mico?</div><ol class="MCAnswers"><li id="Q_22_0"><button class="FuncButton" id="Q_22_0_Btn" onclick="CheckMCAnswer(22,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Produto Interno L&#x00ED;quido (PIL)</li><li id="Q_22_1"><button class="FuncButton" id="Q_22_1_Btn" onclick="CheckMCAnswer(22,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Renda Nacional Bruta (RNB)</li><li id="Q_22_2"><button class="FuncButton" id="Q_22_2_Btn" onclick="CheckMCAnswer(22,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carga Tribut&#x00E1;ria L&#x00ED;quida (CTL)</li><li id="Q_22_3"><button class="FuncButton" id="Q_22_3_Btn" onclick="CheckMCAnswer(22,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Super&#x00E1;vit Prim&#x00E1;rio</li><li id="Q_22_4"><button class="FuncButton" id="Q_22_4_Btn" onclick="CheckMCAnswer(22,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Produto Nacional Bruto (PNB)</li></ol></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">O planejamento e a execu&#x00E7;&#x00E3;o or&#x00E7;ament&#x00E1;ria no Brasil obedecem a um sistema integrado formado por tr&#x00EA;s instrumentos legais: o PPA, a LDO e a LOA. Qual das alternativas a seguir descreve corretamente a fun&#x00E7;&#x00E3;o da Lei de Diretrizes Or&#x00E7;ament&#x00E1;rias (LDO)?</div><ol class="MCAnswers"><li id="Q_23_0"><button class="FuncButton" id="Q_23_0_Btn" onclick="CheckMCAnswer(23,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Funciona como elo entre o PPA e a LOA, ajustando as prioridades e metas anuais e orientando a elabora&#x00E7;&#x00E3;o da pol&#x00ED;tica fiscal.</li><li id="Q_23_1"><button class="FuncButton" id="Q_23_1_Btn" onclick="CheckMCAnswer(23,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Define e fixa as diretrizes, objetivos e programas estrat&#x00E9;gicos de m&#x00E9;dio prazo (quatro anos) do Poder Executivo.</li><li id="Q_23_2"><button class="FuncButton" id="Q_23_2_Btn" onclick="CheckMCAnswer(23,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Estima a arrecada&#x00E7;&#x00E3;o de receitas e fixa detalhadamente a programa&#x00E7;&#x00E3;o dos usos e despesas para o exerc&#x00ED;cio financeiro de um &#x00FA;nico ano.</li><li id="Q_23_3"><button class="FuncButton" id="Q_23_3_Btn" onclick="CheckMCAnswer(23,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Regula a emiss&#x00E3;o de t&#x00ED;tulos da d&#x00ED;vida p&#x00FA;blica federal pelo Tesouro Nacional para financiamento do mercado secund&#x00E1;rio.</li><li id="Q_23_4"><button class="FuncButton" id="Q_23_4_Btn" onclick="CheckMCAnswer(23,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Estabelece as regras de transpar&#x00EA;ncia cont&#x00E1;bil aplicadas exclusivamente &#x00E0;s contas de empresas estatais dependentes.</li></ol></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText">A Lei de Responsabilidade Fiscal (LRF) estabelece normas de finan&#x00E7;as p&#x00FA;blicas voltadas para a responsabilidade e transpar&#x00EA;ncia na gest&#x00E3;o fiscal. Dentre seus limites de controle, a LRF fixa um teto m&#x00E1;ximo para os gastos com pessoal (ativo e inativo) calculados sobre a Receita Corrente L&#x00ED;quida (RCL). Para a Uni&#x00E3;o, esse teto m&#x00E1;ximo &#x00E9; de:</div><ol class="MCAnswers"><li id="Q_24_0"><button class="FuncButton" id="Q_24_0_Btn" onclick="CheckMCAnswer(24,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;50% da Receita Corrente L&#x00ED;quida (RCL)</li><li id="Q_24_1"><button class="FuncButton" id="Q_24_1_Btn" onclick="CheckMCAnswer(24,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;40% da Receita Corrente L&#x00ED;quida (RCL)</li><li id="Q_24_2"><button class="FuncButton" id="Q_24_2_Btn" onclick="CheckMCAnswer(24,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;60% da Receita Corrente L&#x00ED;quida (RCL)</li><li id="Q_24_3"><button class="FuncButton" id="Q_24_3_Btn" onclick="CheckMCAnswer(24,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;70% da Receita Corrente L&#x00ED;quida (RCL)</li><li id="Q_24_4"><button class="FuncButton" id="Q_24_4_Btn" onclick="CheckMCAnswer(24,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;80% da Receita Corrente L&#x00ED;quida (RCL)</li></ol></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText">O Coeficiente de Gini &#x00E9; um indicador estat&#x00ED;stico amplamente utilizado na medi&#x00E7;&#x00E3;o da desigualdade social e da distribui&#x00E7;&#x00E3;o de renda. Assinale a alternativa correta quanto &#x00E0; sua escala de varia&#x00E7;&#x00E3;o e interpreta&#x00E7;&#x00E3;o:</div><ol class="MCAnswers"><li id="Q_25_0"><button class="FuncButton" id="Q_25_0_Btn" onclick="CheckMCAnswer(25,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Varia entre 0 e 1, no qual o valor 0 representa a igualdade perfeita de renda e o valor 1 indica a concentra&#x00E7;&#x00E3;o total da riqueza em uma s&#x00F3; pessoa.</li><li id="Q_25_1"><button class="FuncButton" id="Q_25_1_Btn" onclick="CheckMCAnswer(25,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Varia de 0 a 100, no qual 0 representa desigualdade extrema e 100 indica igualdade perfeita de renda.</li><li id="Q_25_2"><button class="FuncButton" id="Q_25_2_Btn" onclick="CheckMCAnswer(25,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; derivado da Curva de Lorenz, indicando que quanto mais distante a curva estiver da reta de 45&#x00BA;, menor &#x00E9; a concentra&#x00E7;&#x00E3;o de renda.</li><li id="Q_25_3"><button class="FuncButton" id="Q_25_3_Btn" onclick="CheckMCAnswer(25,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Avalia exclusivamente a expectativa de vida e os anos m&#x00E9;dios de escolaridade da popula&#x00E7;&#x00E3;o.</li><li id="Q_25_4"><button class="FuncButton" id="Q_25_4_Btn" onclick="CheckMCAnswer(25,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Varia entre -1 e 1, no qual valores negativos indicam equil&#x00ED;brio fiscal e valores positivos indicam d&#x00E9;ficit social.</li></ol></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText">Para orientar a pol&#x00ED;tica fiscal e verificar a sustentabilidade das contas p&#x00FA;blicas, o governo apura periodicamente o Resultado Prim&#x00E1;rio. Como &#x00E9; definido o Saldo Prim&#x00E1;rio?</div><ol class="MCAnswers"><li id="Q_26_0"><button class="FuncButton" id="Q_26_0_Btn" onclick="CheckMCAnswer(26,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; a diferen&#x00E7;a entre as receitas prim&#x00E1;rias e as despesas prim&#x00E1;rias, desconsiderando receitas e despesas financeiras, como juros da d&#x00ED;vida p&#x00FA;blica.</li><li id="Q_26_1"><button class="FuncButton" id="Q_26_1_Btn" onclick="CheckMCAnswer(26,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; o valor do PIB somado ao saldo positivo da balan&#x00E7;a comercial (exporta&#x00E7;&#x00F5;es menos importa&#x00E7;&#x00F5;es).</li><li id="Q_26_2"><button class="FuncButton" id="Q_26_2_Btn" onclick="CheckMCAnswer(26,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; a diferen&#x00E7;a entre o total de tributos arrecadados e o total das despesas com amortiza&#x00E7;&#x00E3;o de t&#x00ED;tulos p&#x00FA;blicos.</li><li id="Q_26_3"><button class="FuncButton" id="Q_26_3_Btn" onclick="CheckMCAnswer(26,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; a quantia referente ao valor l&#x00ED;quido enviado ao exterior para pagamento de royalties e dividendos.</li><li id="Q_26_4"><button class="FuncButton" id="Q_26_4_Btn" onclick="CheckMCAnswer(26,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x00C9; a arrecada&#x00E7;&#x00E3;o obtida exclusivamente por meio do Imposto de Renda ajustado pela infla&#x00E7;&#x00E3;o oficial do per&#x00ED;odo.</li></ol></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText">Os &#x00ED;ndices de infla&#x00E7;&#x00E3;o medem a varia&#x00E7;&#x00E3;o de pre&#x00E7;os e a perda do poder aquisitivo da moeda. Dentre os indicadores pesquisados e divulgados pelo IBGE, qual &#x00E9; o &#x00ED;ndice focado nas fam&#x00ED;lias com renda de 1 a 5 sal&#x00E1;rios m&#x00ED;nimos e utilizado de forma direta na atualiza&#x00E7;&#x00E3;o do valor nominal do sal&#x00E1;rio m&#x00ED;nimo?</div><ol class="MCAnswers"><li id="Q_27_0"><button class="FuncButton" id="Q_27_0_Btn" onclick="CheckMCAnswer(27,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;INPC (&#x00CD;ndice Nacional de Pre&#x00E7;os ao Consumidor)</li><li id="Q_27_1"><button class="FuncButton" id="Q_27_1_Btn" onclick="CheckMCAnswer(27,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;IPCA (&#x00CD;ndice de Pre&#x00E7;os ao Consumidor Amplo)</li><li id="Q_27_2"><button class="FuncButton" id="Q_27_2_Btn" onclick="CheckMCAnswer(27,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;IGP-M (&#x00CD;ndice Geral de Pre&#x00E7;os do Mercado)</li><li id="Q_27_3"><button class="FuncButton" id="Q_27_3_Btn" onclick="CheckMCAnswer(27,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carga Tribut&#x00E1;ria Bruta (CTB)</li><li id="Q_27_4"><button class="FuncButton" id="Q_27_4_Btn" onclick="CheckMCAnswer(27,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;IDH (&#x00CD;ndice de Desenvolvimento Humano)</li></ol></li></ol>
+
+
+
+</div>
+
+</div>
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onclick="HideFeedback(); return false;">&#160;OK&#160;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
